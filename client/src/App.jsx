@@ -3,11 +3,11 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from './routes/Home';
 import UpdatePage from './routes/UpdatePage';
 import RestaurantDetailPage from './routes/RestaurantDetailPage';
-import { ResturantsContextProvider } from './context/RestaurantsContext';
+import { RestaurantsContextProvider } from './context/RestaurantsContext';
 
 const App = () => {
     return (
-        <ResturantsContextProvider>
+        <RestaurantsContextProvider>
             <div className='container'>
                 <Router>
                     <Routes>
@@ -17,7 +17,7 @@ const App = () => {
                     </Routes>
                 </Router>
             </div>
-        </ResturantsContextProvider>
+        </RestaurantsContextProvider>
     );
 }
 
